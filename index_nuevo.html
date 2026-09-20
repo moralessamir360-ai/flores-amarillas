@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi güerita 💗</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:#5a3040;
+  background:linear-gradient(135deg,#fff7fa,#ffe8f1,#fff);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;opacity:.28;
+  background-image:radial-gradient(#eaa7bb 1px,transparent 1px);
+  background-size:22px 22px;z-index:-1;
+}
+header{text-align:center;padding:70px 20px 45px}
+.heart{font-size:48px;animation:beat 1.5s infinite}
+@keyframes beat{50%{transform:scale(1.15)}}
+h1{font-size:clamp(42px,9vw,78px);color:#c94f78;margin:10px 0}
+.subtitle{font-family:Arial,sans-serif;font-size:18px;max-width:650px;margin:auto;line-height:1.7}
+.btn{
+ display:inline-block;margin-top:28px;padding:14px 24px;border-radius:999px;
+ background:#d95d85;color:white;text-decoration:none;font-family:Arial,sans-serif;
+ box-shadow:0 8px 25px #d95d8540;transition:.25s;cursor:pointer;border:0;font-size:16px
+}
+.btn:hover{transform:translateY(-3px)}
+section{max-width:950px;margin:0 auto;padding:55px 20px}
+.card{
+ background:#ffffffc9;backdrop-filter:blur(8px);border:1px solid #f3c3d2;
+ border-radius:28px;padding:32px;box-shadow:0 15px 45px #9d49631c;margin-bottom:30px
+}
+h2{text-align:center;color:#bd496f;font-size:32px;margin-bottom:25px}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.timebox{background:#fff0f5;border-radius:20px;padding:18px 8px;text-align:center}
+.num{font:bold 30px Arial;color:#c94f78;display:block}
+.label{font:12px Arial;color:#9b6477}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.photo{
+ width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:22px;
+ border:5px solid white;box-shadow:0 10px 25px #8b3f591c;
+ transition:.3s;cursor:pointer
+}
+.photo:hover{transform:scale(1.025) rotate(1deg)}
+.letter{font-size:18px;line-height:1.9;white-space:pre-line}
+.signature{text-align:right;font-style:italic;color:#c94f78;font-size:21px;margin-top:20px}
+.secret{text-align:center}
+.hidden{display:none;margin-top:25px;animation:fade .8s}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.secret-message{
+ background:#fff0f5;border-radius:22px;padding:28px;line-height:1.8;font-size:18px;
+ border:1px dashed #e5a1b8
+}
+.question{font-size:25px;color:#c94f78;font-weight:bold;margin-top:18px}
+footer{text-align:center;padding:35px 20px 55px;font-family:Arial,sans-serif;color:#a66a7d}
+@media(max-width:600px){
+ header{padding-top:45px}
+ .counter{grid-template-columns:repeat(2,1fr)}
+ .card{padding:22px}
+ .letter{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="heart">💗</div>
+  <h1>Para mi güerita</h1>
+  <p class="subtitle">Un pequeño rincón hecho para ti, mi osita, para celebrar nuestro primer mes juntos.</p>
+  <a class="btn" href="#historia">Abrir nuestra historia 💕</a>
+</header>
+
+<section id="historia">
+  <div class="card">
+    <h2>⏳ Nuestro tiempo juntos</h2>
+    <div class="counter">
+      <div class="timebox"><span class="num" id="days">0</span><span class="label">DÍAS</span></div>
+      <div class="timebox"><span class="num" id="hours">0</span><span class="label">HORAS</span></div>
+      <div class="timebox"><span class="num" id="minutes">0</span><span class="label">MINUTOS</span></div>
+      <div class="timebox"><span class="num" id="seconds">0</span><span class="label">SEGUNDOS</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📸 Nuestros recuerdos</h2>
+    <div class="gallery">
+      <img class="photo" src="foto1.jpeg" alt="Barbara">
+      <img class="photo" src="foto2.jpeg" alt="Barbara">
+      <img class="photo" src="foto3.jpeg" alt="Nosotros">
+      <img class="photo" src="foto4.jpeg" alt="Nosotros">
+      <img class="photo" src="foto5.jpeg" alt="Nuestro recuerdo">
+      <img class="photo" src="foto6.jpeg" alt="Nuestro recuerdo">
+      <img class="photo" src="foto7.jpeg" alt="Barbara">
+      <img class="photo" src="foto8.jpeg" alt="Nosotros">
+      <img class="photo" src="foto9.jpeg" alt="Nuestro recuerdo">
+      <img class="photo" src="foto10.jpeg" alt="Nosotros">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>💌 Para ti, mi osita</h2>
+    <div class="letter">Hoy completamos nuestro primer mes siendo novios y la verdad me siento el hombre más afortunado en poder estar junto a ti. Gracias por acompañarme en cada paso, por entenderme incluso en silencio y por llenar mis días de amor. Tú eres la mujer más maravillosa que pude encontrar. Cada día que he pasado a tu lado, para mí, ha sido de dicha. Aunque tengamos discusiones, no existe ningún otro lugar en el mundo en el que quisiera estar.
+
+Aunque para muchos un mes sea poco, a tu lado cada día se siente como algo increíble y se intensifica. Cada vez que haces un pushero, que sonríes y cierras tus ojitos, cada que me dices un te amo, cada que puedo sentir uno de tus abrazos, cada que nos hablamos, aunque estemos a distancia, siento una dicha indescriptible.
+
+Sé que la distancia puede llegar a ser difícil y que muchas veces habrás pensado en dejar las cosas porque he cometido muchos errores. Aun así, sigues a mi lado y yo solo quiero que este mes sea el primero de una vida contigo.
+
+Yo, Samir, te amo intensamente. Te amo cuando estás feliz, cuando te enojas, cuando te estresas, aun cuando te alejas, porque tú me mostraste que eres un ser maravilloso y que mil vidas sin ti no valdrían ni este mes contigo.
+
+Cada día que pasa te quiero tener más cerca. Lucho diariamente para poder ser el hombre que merezca estar a tu lado. Quiero que cumplamos todos los sueños que hemos planteado, desde tener nuestro hogar, nuestra familia, nuestros 5 niños (darte tu tía Paola). Cada día que estamos juntos me convence más de que tú eres el amor de mi vida.
+
+Termino diciéndote que, de verdad, cada momento contigo lo atesoro en mi corazón como los recuerdos más bonitos de mi presente y que quiero que sean mi futuro.
+
+Te amo mucho, mi ositaaaaa. Te amo con locura y espero tú sientas lo mismo por mí. Estemos juntos para siempre.</div>
+    <div class="signature">Tu chocorramito, Samir 💗</div>
+  </div>
+
+  <div class="card secret">
+    <h2>🧸 Cuando extrañes a tu chocorramito...</h2>
+    <p>Hay una sorpresita aquí solo para ti.</p>
+    <button class="btn" onclick="showSecret()">Abrir mi mensaje 💌</button>
+    <div id="secret" class="hidden">
+      <div class="secret-message">
+        Si algún día extrañas a tu chocorramito, recuerda que aquí estoy, pensando en ti y queriéndote cada día un poquito más. ❤️<br><br>
+        Y como quiero que nunca olvides lo mucho que te elijo, quiero hacerte la misma pregunta cada mes: <b>¿quieres seguir siendo mi novia?</b><br><br>
+        Porque aunque ya tenga tu corazón, quiero seguir conquistándote, seguir eligiéndote y seguir teniendo la suerte de llamarte mi novia. No quiero dar por sentado que estarás conmigo; quiero elegirte todos los días, en los días bonitos, en los difíciles y en todos los que nos falten por vivir.<br><br>
+        Así que prepárate, mi osita, porque mientras tú quieras estar conmigo, <b>cada mes voy a volver a preguntártelo.</b> 🥹💗
+        <div class="question">¿Quieres seguir siendo la novia de tu chocorramito? 💗</div>
+        <br>
+        Te elijo hoy, mañana y todos los días que la vida me permita tenerte. ❤️
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Hecho especialmente para Barbara Orendain · 15.08.2026 💗<br>
+  Nuestro primer mes, y espero que solo sea el primero de toda una vida.
+</footer>
+
+<script>
+const start = new Date("2026-08-15T00:00:00");
+function updateCounter(){
+  const now = new Date();
+  let diff = Math.max(0, now - start);
+  const days = Math.floor(diff / 86400000); diff %= 86400000;
+  const hours = Math.floor(diff / 3600000); diff %= 3600000;
+  const minutes = Math.floor(diff / 60000); diff %= 60000;
+  const seconds = Math.floor(diff / 1000);
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
+}
+function showSecret(){
+  const s=document.getElementById("secret");
+  s.classList.toggle("hidden");
+}
+updateCounter();
+setInterval(updateCounter,1000);
+</script>
+</body>
+</html>
